@@ -21,6 +21,7 @@ html{
     font-size: 62.5%;
     font-family: "Open Sans", sans-serif;
     background-color: #000;
+    color: var(--soft-orange);
 }
 header{
     margin: 0 auto;
@@ -53,4 +54,39 @@ header{
     width: 40%;
     max-width: 900px;
     margin-bottom: 15px;
+}
+.menu-container{
+    margin: 49px auto;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    min-width: 390px;
+    max-width: 500px;
+    height: 247px;
+    text-align: center;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.btn-home{
+    padding:5px 30px;
+    border: 1px solid #fff;
+    color: #fff;
+}
+.btn-mastermind{
+    padding:5px 16px;
+    color: #fff;
+    border: 1px solid var(--btn-magenta);
+    background-color: var(--btn-magenta);
+}
+ h2{
+    font-family: "Inika", serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 1.6rem;
+}
+iframe{
+    margin-top: 15px;
 }
