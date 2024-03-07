@@ -5,25 +5,28 @@
 4. Visuales
 5. Otros
 */
-:root{
+:root {
     /* Colores */
     --btn-magenta: #DC01A3;
-    --soft-orange:#FCBB45;
-    --black:#1E1E1E;
-    --just-white:#fff;
+    --soft-orange: #FCBB45;
+    --black: #1E1E1E;
+    --just-white: #fff;
 }
-*{
+
+* {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
-html{
+
+html {
     font-size: 62.5%;
     font-family: "Open Sans", sans-serif;
     background-color: #000;
     color: var(--soft-orange);
 }
-header{
+
+header {
     margin: 0 auto;
     position: relative;
     display: flex;
@@ -39,7 +42,8 @@ header{
     background-position: center;
     background-size: cover;
 }
-.header--menu-container{
+
+.header--menu-container {
     display: flex;
     justify-content: space-between;
     align-self: center;
@@ -47,7 +51,8 @@ header{
     height: 24px;
     margin-top: 12px;
 }
-.header--btn-social-media-container{
+
+.header--btn-social-media-container {
     display: flex;
     justify-content: space-evenly;
     align-self: center;
@@ -55,38 +60,246 @@ header{
     max-width: 900px;
     margin-bottom: 15px;
 }
-.menu-container{
-    margin: 49px auto;
+
+.menu-container {
     position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 48px auto;
+    width: 100%;
+    min-width: 390px;
+    max-width: 500px;
+    height: 247px;
+    text-align: center;
+}
+
+.btn-home {
+    padding: 5px 30px;
+    border: 1px solid #fff;
+    text-decoration: none;
+    font-family: "Inika", serif;
+    color: #fff;
+}
+
+.btn-mastermind {
+    padding: 5px 16px;
+    font-family: "Inika", serif;
+    color: #fff;
+    text-decoration: none;
+    border: 1px solid var(--btn-magenta);
+    background-color: var(--btn-magenta);
+}
+
+h2 {
+    font-family: "Inika", serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 1.6rem;
+}
+
+h3 {
+    font-family: "Inika", serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 1.5rem;
+}
+
+iframe {
+    margin-top: 15px;
+}
+
+.anuncio-container {
+    position: relative;
+    margin: 48px auto;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     width: 100%;
     min-width: 390px;
     max-width: 500px;
-    height: 247px;
+    height: auto;
     text-align: center;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
 }
-.btn-home{
-    padding:5px 30px;
-    border: 1px solid #fff;
-    color: #fff;
+
+.anuncio-container img {
+    align-self: center;
+    margin-top: 42px;
+    width: 277px;
+    height: 155px;
 }
-.btn-mastermind{
-    padding:5px 16px;
-    color: #fff;
-    border: 1px solid var(--btn-magenta);
-    background-color: var(--btn-magenta);
+
+
+.books-container {
+    position: relative;
+    margin: 48px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    min-width: 390px;
+    max-width: 500px;
+    height: auto;
+    text-align: center;
 }
- h2{
-    font-family: "Inika", serif;
-    font-weight: 500;
-    font-style: normal;
-    font-size: 1.6rem;
+
+.handles svg path {
+    stroke: #e2e2e2 !important;
 }
-iframe{
-    margin-top: 15px;
+
+.dots span {
+    background: #fff !important;
+    opacity: 0.5
+}
+
+.dots span.active {
+    opacity: 1
+}
+
+.PostSlide {
+    max-width: 1300px;
+    margin: 40px auto;
+}
+
+.PostSlide {
+    max-width: 1300px;
+    margin: 42px auto 10px;
+}
+
+.PostSlide .innerContainer .slider {
+    display: flex;
+    width: 1280px;
+    overflow-x: hidden;
+    margin: auto;
+}
+
+.PostSlide .innerContainer .slider .slide {
+    display: block;
+    background-size: cover !important;
+    background-position: center center !important;
+    min-width: 280px;
+    height: 465px;
+    margin: 0 10px;
+}
+
+.PostSlide .innerContainer .slider {
+    position: relative;
+    z-index: 2;
+}
+
+.PostSlide .innerContainer .handles {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    top: -230px;
+    width: 103%;
+    cursor: pointer;
+    margin-right: -20px;
+    margin-left: -20px;
+    z-index: 4;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.PostSlide .dots {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    position: relative;
+}
+
+.PostSlide .dots span {
+    border-radius: 10px;
+    background: #CBCBCB;
+    width: 6px;
+    height: 6px;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.PostSlide .slider * {
+    user-drag: none;
+    -webkit-user-drag: none;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
+
+.PostSlide .handles>span {
+    transition: opacity 0.3s;
+}
+
+.PostSlide .handles .prev {
+    opacity: 0;
+}
+
+.PostSlide .handles .next {
+    opacity: 1;
+}
+
+.PostSlide .handles * {
+    user-select: none;
+}
+
+.PostSlide .innerContainer .slider .slide {
+    display: flex !important;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+@media (min-width: 1280px) {
+    .PostSlide .innerContainer .slider {
+        width: 1200px !important;
+        margin: auto;
+    }
+}
+
+@media (max-width: 1280px) {
+    .PostSlide .innerContainer .handles {
+        width: calc(100% + 30px) !important;
+        margin-left: -15px !important;
+        margin-right: -15px !important;
+    }
+}
+
+@media (min-width: 960px) and (max-width: 1280px) {
+    .PostSlide .innerContainer .slider {
+        width: 960px !important;
+    }
+}
+
+@media (min-width: 960px) and (max-width: 1280px) {
+    .PostSlide .innerContainer .slider {
+        width: 960px !important;
+    }
+}
+
+@media (min-width: 640px) and (max-width: 960px) {
+    .PostSlide .innerContainer .slider {
+        width: 640px !important;
+    }
+}
+
+@media (max-width: 640px) {
+    .PostSlide .innerContainer .slider {
+        width: 300px !important;
+    }
+}
+
+.PostSlide .innerContainer,
+.PostSlide .slider,
+.PostSlide .handles,
+.PostSlide .dots {
+    direction: ltr;
+}
+
+.PostSlide .innerContainer .slider .slide>div {
+    display: block;
+    background-size: cover !important;
+    background-position: center center !important;
+    min-width: 100%;
+    height: 100%;
+    border-radius: 8px
 }
