@@ -129,6 +129,43 @@ iframe {
     height: 155px;
 }
 
+.anuncio-container-top {
+    position: relative;
+    margin: 48px auto;
+    /* display: flex; */
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    min-width: 390px;
+    max-width: 500px;
+    height: auto;
+    text-align: center;
+}
+
+.anuncio-container-top top {
+    align-self: center;
+    margin-top: 42px;
+    /* width: 277px;
+    height: 155px; */
+}
+
+.btn-mastermind-footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    min-width: 300px;
+    max-width: 250px;
+    height: auto;
+    text-align: center;
+    margin: 10px auto;
+    padding: 5px 16px;
+    font-family: "Inika", serif;
+    color: #fff;
+    text-decoration: none;
+    background-color: var(--btn-magenta);
+}
+
 
 .books-container {
     position: relative;
@@ -138,7 +175,7 @@ iframe {
     justify-content: space-between;
     width: 100%;
     min-width: 390px;
-    max-width: 500px;
+    /* max-width: 500px; */
     height: auto;
     text-align: center;
 }
@@ -156,13 +193,10 @@ iframe {
     opacity: 1
 }
 
-.PostSlide {
-    max-width: 1300px;
-    margin: 40px auto;
-}
+
 
 .PostSlide {
-    max-width: 1300px;
+    max-width: 500px;
     margin: 42px auto 10px;
 }
 
@@ -251,7 +285,7 @@ iframe {
 
 @media (min-width: 1280px) {
     .PostSlide .innerContainer .slider {
-        width: 1200px !important;
+        width: 300px !important;
         margin: auto;
     }
 }
